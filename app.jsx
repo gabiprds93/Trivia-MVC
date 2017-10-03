@@ -99,7 +99,7 @@ const App = ({model}) =>
       {
             for(let i of model.incorrectas)
             {
-                  respuestas[i] = <h4 key={i} style={{color:"red"}}>{i+1}. {model.preguntas[i].pregunta} {model.arregloRespuestas[i]} <strong>{model.preguntas[i].respuesta}</strong></h4>;           
+                  respuestas[i] = <h4 key={i} style={{color:"red"}}>{i+1}. {model.preguntas[i].pregunta} <strike>{model.arregloRespuestas[i]}</strike> <strong>{model.preguntas[i].respuesta}</strong></h4>;           
             }
       }
       let secPreguntas;
